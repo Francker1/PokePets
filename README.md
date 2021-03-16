@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# PokePets!
+
+This repo shows a list of pets and you can search or like-him!
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
