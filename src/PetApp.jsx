@@ -1,9 +1,12 @@
 import PropTypes from 'prop-types';
+import { DogList } from './components/dogs/DogList';
+import { Footer } from './components/footer/Footer';
 
-export const PetApp = ({message}) => {
+export const PetApp = ({props}) => {
     return (
         <>
-            <h1>{message}</h1>
+            <DogList />
+            <Footer />
         </>
     )
 }

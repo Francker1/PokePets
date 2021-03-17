@@ -1,0 +1,14 @@
+
+.card__dog{
+    border: 0.7px solid var(--white-color);
+    border-radius: 10px;
+}
+
+.card__dog-content dt{
+    
+    font-weight: bold;
+}
+
+.card__dog-content dd{
+    margin-left: 1rem;
+}
