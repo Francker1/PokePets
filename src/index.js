@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import { PetApp } from './PetApp';
 
+import "./index.css";
+
 ReactDOM.render(
-    <PetApp message={"hola pets!"} />,
+    <PetApp />,
   document.getElementById('root')
 );

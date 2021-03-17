@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import "./styles/dog-card.css";
 
@@ -31,6 +32,11 @@ const DogCard = ({id, name, size, weight, height, likes}) => {
                 </dl>
                 <button className="flex items-center justify-center rounded-full bg-purple-700 text-white | w-1/2 | px-4 py-2 mt-6" type="submit">Like Me!</button>
                 <p className="w-1/3 | ml-5">{likes} likes.</p>
+
+                <Link to={`/dog/${id}`}>
+                    Ver...
+                </Link>
+
             </div>
         </div>
     )

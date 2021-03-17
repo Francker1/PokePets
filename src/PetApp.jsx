@@ -1,17 +1,12 @@
-import PropTypes from 'prop-types';
-import { DogList } from './components/dogs/DogList';
+
 import { Footer } from './components/footer/Footer';
+import { AppRouter } from './routes/AppRouter';
 
 export const PetApp = ({props}) => {
     return (
         <>
-            <DogList />
+            <AppRouter />
             <Footer />
         </>
     )
 }
-
-PetApp.propTypes = {
-    message: PropTypes.string.isRequired,
-}
-
