@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root{
-  --main-bg-color: #191922;
-  --white-color: #f1f1f1;
+  --main-bg-color: #f1f1f1;
+  --white-color: #191922;
   --accent-color: #EF5466;
 }
 
@@ -20,6 +20,11 @@
 
   a{
     text-decoration: none;
+  }
+
+  h1{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
 }
