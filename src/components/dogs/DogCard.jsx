@@ -4,7 +4,7 @@ import "./styles/dog-card.css";
 
 
 
-const DogCard = ({id, name, size, description, weight, height, likes}) => {
+const DogCard = ({id, name, size, weight, height, likes}) => {
 
     return (
         
@@ -18,8 +18,6 @@ const DogCard = ({id, name, size, description, weight, height, likes}) => {
                     {name}
                 </h2>
                 <dl className="card__dog-content w-full">
-                    <dt>Descripción</dt>
-                    <dd>{description}</dd>
                     
                     <dt>Tamaño</dt>
                     <dd>{size}</dd>
@@ -29,6 +27,7 @@ const DogCard = ({id, name, size, description, weight, height, likes}) => {
 
                     <dt>Altura media</dt>
                     <dd>{height} cm.</dd>
+                    
                 </dl>
                 <button className="flex items-center justify-center rounded-full bg-purple-700 text-white | w-1/2 | px-4 py-2 mt-6" type="submit">Like Me!</button>
                 <p className="w-1/3 | ml-5">{likes} likes.</p>
