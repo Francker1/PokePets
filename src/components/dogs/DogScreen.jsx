@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { getDogById } from '../../helpers/getDogById';
+import { NavBar } from '../nav/NavBar';
 
 export const DogScreen = ({history}) => {
 
@@ -21,15 +22,16 @@ export const DogScreen = ({history}) => {
 
     return (
         <>
-        <div>
-            {id}
-            {name}
-            {description}
-            {size}
-        </div>
-        <button onClick={ handleReturn }>
-            Volver
-        </button>
+            <NavBar />
+            <div>
+                {id}
+                {name}
+                {description}
+                {size}
+            </div>
+            <button onClick={ handleReturn }>
+                Volver
+            </button>
         </>
     )
 }
