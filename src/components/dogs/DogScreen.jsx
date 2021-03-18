@@ -23,23 +23,23 @@ export const DogScreen = ({history}) => {
     return (
         <>
             <NavBar />
-            <div class="flex items-center overflow-hidden relative | py-24 md:py-36" key={id}>
-                <div class="w-full max-w-6xl rounded bg-white shadow-xl text-gray-800 relative md:text-left | p-10 lg:p-20 mx-auto ">
+            <div className="flex items-center overflow-hidden relative | py-24 md:py-36" key={id}>
+                <div className="w-full max-w-6xl rounded bg-white shadow-xl text-gray-800 relative md:text-left | p-10 lg:p-20 mx-auto ">
                     <button onClick={ handleReturn }>
                         Volver
                     </button>
-                    <div class="md:flex items-center -mx-10">
-                        <div class="w-full md:w-1/2 px-10 mb-10 md:mb-0">
-                            <div class="relative">
-                                <img src="https://picsum.photos/640/400/?random" class="w-full relative z-10" alt={name} />
+                    <div className="md:flex items-center -mx-10">
+                        <div className="w-full md:w-1/2 px-10 mb-10 md:mb-0">
+                            <div className="relative">
+                                <img src="https://picsum.photos/640/400/?random" className="w-full relative z-10" alt={name} />
                             </div>
                         </div>
-                        <div class="w-full md:w-1/2 | px-10">
-                            <div class="mb-10">
-                                <h1 class="font-bold uppercase text-2xl | mb-5">{name}</h1>
-                                <p class="text-sm">{description}</p>
+                        <div className="w-full md:w-1/2 | px-10">
+                            <div className="mb-10">
+                                <h1 className="font-bold uppercase text-2xl | mb-5">{name}</h1>
+                                <p className="text-sm">{description}</p>
                             </div>
-                            <div class="mb-8">
+                            <div className="mb-8">
                                 <ul>
                                     <li><span className="font-semibold">Tamaño:</span> {size}.</li>
                                     <li><span className="font-semibold">Peso:</span> {weight} kg.</li>
@@ -47,8 +47,8 @@ export const DogScreen = ({history}) => {
                                 </ul>
                             </div>
                             <div>
-                                <div class="inline-block align-bottom">
-                                    <button class="font-semibold shadow-lg rounded-full | border | px-10 py-2 ">Like me!</button>
+                                <div className="inline-block align-bottom">
+                                    <button className="font-semibold shadow-lg rounded-full | border | px-10 py-2 ">Like me!</button>
                                     <p>likes: {likes}</p>
                                 </div>
                             </div>

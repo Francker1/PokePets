@@ -45,7 +45,7 @@ const DogCard = ({id, name, size, weight, height, likes}) => {
                     </dl>
                 </div>
 
-                <div class="p-4 card__dog-btn">
+                <div className="p-4 card__dog-btn">
                     <Link to={`/dogs/${id}`} className="block tracking-widest text-center shadow focus:shadow-outline focus:outline-none rounded | py-3 px-10 ">
                         Ver perrito
                     </Link>
