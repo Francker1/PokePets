@@ -23,7 +23,7 @@ export const DogScreen = ({history}) => {
     return (
         <>
             <NavBar />
-            <div class="flex items-center overflow-hidden relative | p-5 lg:p-10" key={id}>
+            <div class="flex items-center overflow-hidden relative | py-24 md:py-36" key={id}>
                 <div class="w-full max-w-6xl rounded bg-white shadow-xl text-gray-800 relative md:text-left | p-10 lg:p-20 mx-auto ">
                     <button onClick={ handleReturn }>
                         Volver

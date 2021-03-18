@@ -1,0 +1,9 @@
+
+nav{
+    background-color: var(--black-color);
+}
+
+nav a {
+    color: var(--white-color);
+    font-weight: 600;
+}
