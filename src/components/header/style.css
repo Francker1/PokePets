@@ -1,0 +1,18 @@
+
+.header__cover{
+    background-image: url("../../images/pokepets_cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh);
+}
+
+.header__cover-container a, .header__cover-container{
+    color: var(--white-color);
+}
+
+.header__cover-container{
+    
+    height: inherit;
+}
+

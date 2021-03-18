@@ -33,7 +33,7 @@ const DogCard = ({id, name, size, weight, height, likes}) => {
                 <button className="flex items-center justify-center rounded-full bg-purple-700 text-white | w-1/2 | px-4 py-2 mt-6" type="submit">Like Me!</button>
                 <p className="w-1/3 | ml-5">{likes} likes.</p>
 
-                <Link to={`/dog/${id}`}>
+                <Link to={`/dogs/${id}`}>
                     Ver...
                 </Link>
 
