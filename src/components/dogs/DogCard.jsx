@@ -9,36 +9,50 @@ const DogCard = ({id, name, size, weight, height, likes}) => {
 
     return (
         
-        <div className="flex-p-6 card__dog" key={id}>
-            <div className="flex-none w-44 relative">
-                <img src="/kids-jumpsuit.jpg" alt="" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
-            </div>
-            <div className="flex flex-wrap items-baseline | p-4">
-                <h2 className="flex-none font-semibold text-3xl focus-within:sr-only
-                | w-full | mb-2.5">
-                    {name}
-                </h2>
-                <dl className="card__dog-content w-full">
-                    
-                    <dt>Tamaño</dt>
-                    <dd>{size}</dd>
-
-                    <dt>Peso medio</dt>
-                    <dd>{weight} kg.</dd>
-
-                    <dt>Altura media</dt>
-                    <dd>{height} cm.</dd>
-                    
-                </dl>
-                <button className="flex items-center justify-center rounded-full bg-purple-700 text-white | w-1/2 | px-4 py-2 mt-6" type="submit">Like Me!</button>
-                <p className="w-1/3 | ml-5">{likes} likes.</p>
-
+        <div className="grid grid-cols-3 grid-rows-7 grid-flow-row rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out" key={id}>
+            <div className="col-span-3 row-span-4 | m-1 p-1">
                 <Link to={`/dogs/${id}`}>
-                    Ver...
+                    <img
+                    src="https://picsum.photos/640/400/?random"
+                    alt={name}
+                    className="rounded-t-xl object-cover | h-48 w-full"
+                    />
                 </Link>
+            </div>
 
+            <div className="col-span-3 row-span-1">
+                <div className="flex items-center justify-between leading-tight | p-2 md:p-4">
+                    <h2 className="text-2xl">
+                        <Link to={`/dogs/${id}`} className="text-black no-underline">
+                            {name}
+                        </Link>
+                    </h2>
+                    <p className="text-grey-darker text-sm">{likes} likes</p>
+                </div>
+                
+                <div className="flex | px-6">
+                    <dl className="card__dog-content w-full">
+            
+                        <dt>Tamaño</dt>
+                        <dd>{size}</dd>
+
+                        <dt>Peso medio</dt>
+                        <dd>{weight} kg.</dd>
+
+                        <dt>Altura media</dt>
+                        <dd>{height} cm.</dd>
+                        
+                    </dl>
+                </div>
+
+                <div class="p-4 card__dog-btn">
+                    <Link to={`/dogs/${id}`} className="block tracking-widest text-center shadow focus:shadow-outline focus:outline-none rounded | py-3 px-10 ">
+                        Ver perrito
+                    </Link>
+                </div>
             </div>
         </div>
+
     )
 }
 
@@ -52,4 +66,4 @@ DogCard.propTypes = {
     likes: PropTypes.number,
 }
 
-export default DogCard
+export default DogCard;

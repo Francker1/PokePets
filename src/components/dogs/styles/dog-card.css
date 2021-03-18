@@ -1,9 +1,4 @@
 
-.card__dog{
-    border: 0.7px solid var(--black-color);
-    border-radius: 10px;
-}
-
 .card__dog-content dt{
     
     font-weight: bold;
@@ -11,4 +6,9 @@
 
 .card__dog-content dd{
     margin-left: 1rem;
+}
+
+.card__dog-btn a:hover{
+    background-color: var(--accent-color);
+    color: var(--main-bg-color);
 }
