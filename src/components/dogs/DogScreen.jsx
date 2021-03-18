@@ -1,8 +1,11 @@
-import React from 'react';
-
-import { useParams, Redirect } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import { getDogById } from '../../helpers/getDogById';
 
 export const DogScreen = ({history}) => {
+
+    const { dogId } = useParams();
+
+    const dog = getDogById(dogId);
 
     const handleReturn = () => {
 
@@ -14,13 +17,15 @@ export const DogScreen = ({history}) => {
 
     }
 
-    const { dogId } = useParams();
+    const {id, name, description, size} = dog;
 
-    
     return (
         <>
         <div>
-            {dogId}
+            {id}
+            {name}
+            {description}
+            {size}
         </div>
         <button onClick={ handleReturn }>
             Volver

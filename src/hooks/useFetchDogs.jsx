@@ -8,7 +8,7 @@ export const useFetchDogs = () => {
         loading: true,
     });
 
-    useEffect(() =>{
+    useEffect(() => {
         
         getDogs()
             .then( data =>{
