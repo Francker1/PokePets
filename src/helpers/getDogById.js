@@ -7,8 +7,8 @@ export const getDogById = ( dogId ) => {
 
    const dog = auth
      .database()
-     .ref("dogs/")
-     .child(dogId - 1)
+     .ref("dogs")
+     .child(dogId)
      .get()
      .then((snapshot) => {
 
