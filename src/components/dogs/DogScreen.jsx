@@ -38,7 +38,7 @@ export const DogScreen = ({history}) => {
         setDogLike(id, likes)
     }
 
-    const {id, name, description, size, weight, height, likes} = dog.data;
+    const {id, name, description, size, weight, height, likes, img} = dog.data;
 
     return (
         <>
@@ -51,7 +51,7 @@ export const DogScreen = ({history}) => {
                     <div className="md:flex items-center -mx-10">
                         <div className="w-full md:w-1/2 px-10 mb-10 md:mb-0">
                             <div className="relative">
-                                <img src="https://picsum.photos/640/400/?random" className="w-full relative z-10" alt={name} />
+                                <img src={img} className="w-full relative z-10" alt={name} />
                             </div>
                         </div>
                         <div className="w-full md:w-1/2 | px-10">

@@ -5,7 +5,7 @@ import "./styles/dog-card.css";
 
 
 
-const DogCard = ({id, name, size, weight, height, likes}) => {
+const DogCard = ({id, name, size, weight, height, likes, img}) => {
 
     return (
         
@@ -13,7 +13,7 @@ const DogCard = ({id, name, size, weight, height, likes}) => {
             <div className="col-span-3 row-span-4 | m-1 p-1">
                 <Link to={`/dogs/${id}`}>
                     <img
-                    src="https://picsum.photos/640/400/?random"
+                    src={img}
                     alt={name}
                     className="rounded-t-xl object-cover | h-48 w-full"
                     />
