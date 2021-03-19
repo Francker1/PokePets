@@ -1,0 +1,102 @@
+{
+    "dogs": [
+    {
+      "name": "Alaskan Malamute",
+      "id": 0,
+      "description": "El Alaskan Malamute o Malamute de Alaska, es originario del ártico y se considera una de las razas más longevas de la historia de los perros con trineo. Su presencia imponente y sobria da una imagen equivocada de su carácter real",
+      "origin": "América",
+      "size": "grande",
+      "height": "55-70",
+      "weight": "25-45",
+      "img": "https://picsum.photos/600/400",
+      "likes": 4,
+      "character": [
+        "equilibrado",
+        "sociable",
+        "muy fiel"
+      ]
+    },
+    {
+      "name": "Mastín español",
+      "id": 1,
+      "description": "Conocido también como mastín leonés, este es uno de los tipos de mastines español más conocido. Así pues, es originario de España, donde ha sido utilizado como perro guardián de propiedades o rebaños. En cuanto a su apariencia, presenta un esqueleto compacto que le da una apariencia maciza y fuerte, con extremidades proporcionadas. El manto es semilargo, liso y tupido, puede presentarse en tonos amarillos, rojizos, negros, o una combinación de los tres colores en distintas cantidades.",
+      "origin": "Europa",
+      "size": "grande",
+      "height": "80-90",
+      "weight": "45-100",
+      "img": "https://picsum.photos/600/400",
+      "likes": 10,
+      "character": [
+        "fuerte",
+        "sociable",
+        "muy fiel",
+        "dócil"
+      ]
+    },
+    {
+      "name": "Foxhound inglés",
+      "id": 2,
+      "description": "EEl foxhound inglés es un perro de tipo sabueso que muestra una morfología estilizada y un temperamento amigable. Es especialmente popular en su país de origen, Reino Unido, aunque ha destacado notablemente como perro cazador gracias a su prodigioso olfato, lo que le ha popularizado alrededor del mundo. Ha sido desarrollado durante generaciones y, de hecho, esta raza ha sido clave para el posterior desarrollo del foxhound americano.",
+      "origin": "Europa",
+      "size": "grande",
+      "height": "55-70",
+      "weight": "25-45",
+      "img": "https://picsum.photos/600/400",
+      "likes": 0,
+      "character": [
+        "equilibrado",
+        "sociable",
+        "activo"
+      ]
+    },
+    {
+      "name": "Boyero de Berna",
+      "id": 3,
+      "description": "El boyero de Berna o boyero de montaña bernés es un perro muy popular actualmente ya que es un excelente perro familiar que además se desempeña muy bien en algunas labores como la búsqueda y rescate y el apoyo en terapias para adultos y niños. Es sin duda un perro excelente en muchos sentidos.",
+      "origin": "Europa",
+      "size": "grande",
+      "height": "55-70",
+      "weight": "45-100",
+      "img": "https://picsum.photos/600/400",
+      "likes": 4,
+      "character": [
+        "dócil",
+        "sociable",
+        "tranquilo"
+      ]
+    },
+    {
+      "name": "Terrier tibetano",
+      "id": 4,
+      "description": "Pese a encontrarse catalogado dentro del grupo de los terriers, el terrier tibetano difiere mucho de sus congéneres, no presentando el carácter y las características típicas de otras razas terrier. Antiguamente acompañaban a monjes budistas, por suerte hoy en día acompañan a muchas familias alrededor de todo el mundo, lo cual es comprensible dada su personalidad cariñosa y juguetona, además de su inteligencia y docilidad.",
+      "origin": "Asia",
+      "size": "mediano",
+      "height": "35-45",
+      "weight": "3-10",
+      "img": "https://picsum.photos/600/400",
+      "likes": 7,
+      "character": [
+        "tímido",
+        "tranquilo",
+        "muy fiel"
+      ]
+    },
+    {
+      "name": "Rottweiller",
+      "id": 5,
+      "description": "El rottweiler es un perro fuerte, robusto y atlético. De talla mediana a grande, y con una apariencia que no esconde su gran poder, el rottweiler inspira una enorme admiración entre sus simpatizantes y un temor casi mítico entre quienes no lo conocen. Es indudable que la sola presencia de estos perros impone respeto y es fácil asustarse de un perro tan poderoso. No en vano la raza fue la elegida para encarnar al 'perro del diablo' en la serie de películas \"La Profecía\".",
+      "origin": "Europa",
+      "size": "Grande",
+      "height": "55-70",
+      "weight": "45-100",
+      "img": "https://picsum.photos/600/400",
+      "likes": 2,
+      "character": [
+        "equilibrado",
+        "activo",
+        "inteligente",
+        "dominante"
+      ]
+    }
+  ]
+}
