@@ -4,6 +4,9 @@ import { getDogById } from '../../helpers/getDogById';
 import { setDogLike } from "../../helpers/setDogLike";
 import { NavBar } from '../nav/NavBar';
 
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import "./styles/dog-screen.css";
+
 export const DogScreen = ({history}) => {
 
     const { dogId } = useParams();
@@ -35,7 +38,7 @@ export const DogScreen = ({history}) => {
     }
 
     const handleLike = (id, likes) => {
-        setDogLike(id, likes)
+        setDogLike(id, likes);
     }
 
     const {id, name, description, size, weight, height, likes} = dog.data;
@@ -51,7 +54,7 @@ export const DogScreen = ({history}) => {
                     <div className="md:flex items-center -mx-10">
                         <div className="w-full md:w-1/2 px-10 mb-10 md:mb-0">
                             <div className="relative">
-                                <img src="https://picsum.photos/640/400/?random" className="w-full relative z-10" alt={name} />
+                                <img src="https://picsum.photos/640/400/?random" className=" w-full relative z-10" alt={name} />
                             </div>
                         </div>
                         <div className="w-full md:w-1/2 | px-10">
@@ -69,9 +72,10 @@ export const DogScreen = ({history}) => {
                             <div>
                                 <div className="inline-block align-bottom">
                                     <button 
-                                        className="font-semibold shadow-lg rounded-full | border | px-10 py-2"
+                                        className="like-btn font-semibold shadow-lg rounded-md | px-10 py-2"
                                         onClick={ () => handleLike(id, likes) }
-                                        >Like me!</button>
+                                        ><FavoriteIcon /> Like me!
+                                    </button>
                                 </div>
                             </div>
                         </div>
