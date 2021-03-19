@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <DogCard /> component Should render component correctly 1`] = `
+<div
+  className="grid grid-cols-3 grid-rows-7 grid-flow-row rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+  key="1"
+>
+  <div
+    className="col-span-3 row-span-4 | m-1 p-1"
+  >
+    <Link
+      to="/dogs/1"
+    >
+      <img
+        alt="Mastín"
+        className="rounded-t-xl object-cover | h-48 w-full"
+      />
+    </Link>
+  </div>
+  <div
+    className="col-span-3 row-span-1"
+  >
+    <div
+      className="flex items-center justify-between leading-tight | p-2 md:p-4"
+    >
+      <h2
+        className="text-2xl"
+      >
+        <Link
+          className="text-black no-underline"
+          to="/dogs/1"
+        >
+          Mastín
+        </Link>
+      </h2>
+      <p
+        className="text-grey-darker text-sm"
+      >
+         likes
+      </p>
+    </div>
+    <div
+      className="flex | px-6"
+    >
+      <dl
+        className="card__dog-content w-full"
+      >
+        <dt>
+          Tamaño
+        </dt>
+        <dd />
+        <dt>
+          Peso medio
+        </dt>
+        <dd>
+           kg.
+        </dd>
+        <dt>
+          Altura media
+        </dt>
+        <dd>
+           cm.
+        </dd>
+      </dl>
+    </div>
+    <div
+      className="p-4 card__dog-btn"
+    >
+      <Link
+        className="block tracking-widest text-center shadow focus:shadow-outline focus:outline-none rounded | py-3 px-10 "
+        to="/dogs/1"
+      >
+        Ver perrito
+      </Link>
+    </div>
+  </div>
+</div>
+`;
