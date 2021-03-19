@@ -1,6 +1,10 @@
+
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { BtnBubble } from '../buttons/bubble/BtnBubble';
 
+
+import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
 import "./styles/dog-card.css";
 
 
@@ -27,7 +31,9 @@ const DogCard = ({id, name, size, weight, height, likes}) => {
                             {name}
                         </Link>
                     </h2>
-                    <p className="text-grey-darker text-sm">{likes} likes</p>
+                    <p className="text-grey-darker text-md">
+                        Likes: {likes}
+                    </p>
                 </div>
                 
                 <div className="flex | px-6">
@@ -46,9 +52,7 @@ const DogCard = ({id, name, size, weight, height, likes}) => {
                 </div>
 
                 <div className="p-4 card__dog-btn">
-                    <Link to={`/dogs/${id}`} className="block tracking-widest text-center shadow focus:shadow-outline focus:outline-none rounded | py-3 px-10 ">
-                        Ver perrito
-                    </Link>
+                    <BtnBubble texto={"Ver perrito"} url={`/dogs/${id}`} />
                 </div>
             </div>
         </div>

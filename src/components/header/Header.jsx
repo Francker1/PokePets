@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { BtnBubble } from "../buttons/bubble/BtnBubble";
 
 import "./style.css";
 
@@ -14,9 +14,7 @@ export const Header = () => {
                         <p>La web de perros para gente curiosa</p>
                     </div>
                     <div className="flex justify-center relative | h-12 | mt-6">
-                        <Link className="flex shadow-md font-medium absolute py-2 px-4 cursor-pointer rounded text-lg" to="/dogs/">
-                            Descubrir
-                        </Link>
+                        <BtnBubble texto={"Descubrir"} url={"/dogs/"}/>
                     </div>
                 </div>
             </div>
