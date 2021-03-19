@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { BtnBubble } from '../buttons/bubble/BtnBubble';
 
 
-import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
 import "./styles/dog-card.css";
 
 
