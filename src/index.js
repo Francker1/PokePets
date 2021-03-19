@@ -4,7 +4,8 @@ import { PetApp } from './PetApp';
 
 import "./index.css";
 
+
 ReactDOM.render(
     <PetApp />,
-  document.getElementById('root')
+  document.getElementById("root")
 );
