@@ -14,6 +14,7 @@ exports[`Test in <DogCard /> component Should render component correctly 1`] = `
       <img
         alt="Mastín"
         className="rounded-t-xl object-cover | h-48 w-full"
+        src="http://example.img"
       />
     </Link>
   </div>
@@ -34,9 +35,9 @@ exports[`Test in <DogCard /> component Should render component correctly 1`] = `
         </Link>
       </h2>
       <p
-        className="text-grey-darker text-sm"
+        className="text-grey-darker text-md"
       >
-         likes
+        Likes: 
       </p>
     </div>
     <div
@@ -66,12 +67,10 @@ exports[`Test in <DogCard /> component Should render component correctly 1`] = `
     <div
       className="p-4 card__dog-btn"
     >
-      <Link
-        className="block tracking-widest text-center shadow focus:shadow-outline focus:outline-none rounded | py-3 px-10 "
-        to="/dogs/1"
-      >
-        Ver perrito
-      </Link>
+      <BtnBubble
+        texto="Ver perrito"
+        url="/dogs/1"
+      />
     </div>
   </div>
 </div>
