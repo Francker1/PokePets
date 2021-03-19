@@ -1,4 +1,7 @@
-export const firebaseConfig = {
+import firebase from "firebase";
+import "firebase/auth";
+
+const firebaseConfig = {
   apiKey: "AIzaSyBOsl7vB1IsXtUyAjw8d29Uotn1sm6UJCQ",
   authDomain: "pokepets-e280d.firebaseapp.com",
   databaseURL: "https://pokepets-e280d-default-rtdb.firebaseio.com",
@@ -7,3 +10,12 @@ export const firebaseConfig = {
   messagingSenderId: "705510629878",
   appId: "1:705510629878:web:322444b2df06b2a821a7d7",
 };
+
+if (!firebase.apps.length) {
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+}
+
+const auth = firebase;
+
+export { auth };

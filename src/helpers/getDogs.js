@@ -1,7 +1,20 @@
-import { data } from "../data/dogs";
+import { auth } from "../config/firebase";
 
 export const getDogs = async () => {
 
-    const resp = await data;
-    return resp;
+   const dogs = auth
+      .database()
+      .ref()
+      .child("dogs")
+      .get()
+      .then( (snapshot) => {
+        
+          return snapshot.val();
+      })
+      .catch( (error) => {
+        console.error(error); //get error and show in UI...
+      });
+
+      return dogs;
+
 }
