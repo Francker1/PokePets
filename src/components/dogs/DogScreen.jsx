@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 import { getDogById } from '../../helpers/getDogById';
 import { NavBar } from '../nav/NavBar';
@@ -5,8 +6,22 @@ import { NavBar } from '../nav/NavBar';
 export const DogScreen = ({history}) => {
 
     const { dogId } = useParams();
+    const [dog, setDog] = useState({
+        data: [],
+        loading: true,
+    });
 
-    const dog = getDogById(dogId);
+    useEffect(() => {
+        
+        getDogById(dogId)
+            .then( data =>{
+                setDog({
+                    data, 
+                    loading: false,
+                })
+            })
+            
+    }, [dogId])
 
     const handleReturn = () => {
 
@@ -18,7 +33,7 @@ export const DogScreen = ({history}) => {
 
     }
 
-    const {id, name, description, size, weight, height, likes} = dog;
+    const {id, name, description, size, weight, height, likes} = dog.data;
 
     return (
         <>
