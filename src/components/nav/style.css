@@ -1,6 +1,7 @@
 
 nav{
     background-color: var(--black-color);
+    z-index: 99;
 }
 
 nav a {

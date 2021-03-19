@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 import { getDogById } from '../../helpers/getDogById';
+import { setDogLike } from "../../helpers/setDogLike";
 import { NavBar } from '../nav/NavBar';
 
 export const DogScreen = ({history}) => {
@@ -33,12 +34,16 @@ export const DogScreen = ({history}) => {
 
     }
 
+    const handleLike = (id, likes) => {
+        setDogLike(id, likes)
+    }
+
     const {id, name, description, size, weight, height, likes} = dog.data;
 
     return (
         <>
             <NavBar />
-            <div className="flex items-center overflow-hidden relative | py-24 md:py-36" key={id}>
+            <div className="flex items-center | py-24 md:py-36" key={id}>
                 <div className="w-full max-w-6xl rounded bg-white shadow-xl text-gray-800 relative md:text-left | p-10 lg:p-20 mx-auto ">
                     <button onClick={ handleReturn }>
                         Volver
@@ -63,8 +68,10 @@ export const DogScreen = ({history}) => {
                             </div>
                             <div>
                                 <div className="inline-block align-bottom">
-                                    <button className="font-semibold shadow-lg rounded-full | border | px-10 py-2 ">Like me!</button>
-                                    <p>likes: {likes}</p>
+                                    <button 
+                                        className="font-semibold shadow-lg rounded-full | border | px-10 py-2"
+                                        onClick={ () => handleLike(id, likes) }
+                                        >Like me!</button>
                                 </div>
                             </div>
                         </div>

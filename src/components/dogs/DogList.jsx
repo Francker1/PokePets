@@ -1,6 +1,7 @@
 import React from "react";
 import { useFetchDogs } from "../../hooks/useFetchDogs";
 import { NavBar } from "../nav/NavBar";
+import { Footer } from "../footer/Footer";
 import DogCard from "./DogCard";
 
 
@@ -27,6 +28,7 @@ export const DogList = () => {
                 </div>
             </div>
 
+            <Footer />
         </>
     )
 }
